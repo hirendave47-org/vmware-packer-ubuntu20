@@ -249,8 +249,8 @@ source "vsphere-iso" "linux-ubuntu-server" {
     network = var.vcenter_network
     network_card = var.vm_network_card
   }
-  iso_url = var.iso_url
-  // iso_paths = ["[${ var.vcenter_datastore }] /${ var.iso_path }/${ var.iso_file }"]
+  //iso_url = var.iso_url
+  iso_paths = ["[${ var.vcenter_datastore }] /${ var.iso_path }"]
   iso_checksum = "${var.iso_checksum_type}:${var.iso_checksum}"
   http_directory = var.http_directory
   boot_order = "disk,cdrom"
