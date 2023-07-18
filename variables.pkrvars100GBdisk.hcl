@@ -10,7 +10,7 @@ http_directory = "http"
 
 vm_name                     = "Ubuntu-2004-Template-100GB-Thin"
 vm_guest_os_type            = "ubuntu64Guest"
-vm_version                  = 14
+vm_version                  = 19
 vm_firmware                 = "bios"
 vm_cdrom_type               = "sata"
 vm_cpu_sockets              = 1
