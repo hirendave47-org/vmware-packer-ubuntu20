@@ -1,12 +1,3 @@
-terraform.*
-.terraform*
-packer-vsphere-iso-windows/win2019.base/variables.json
-packer-vsphere-iso-windows/win2016.base/variables.json
-variables.json
-.terraform.tfstate.lock.info
-# Cache objects
-packer_cache/
-
-# For built boxes
-*.box
-preseed*
+vsphere.pkrvars.hcl
+packer_cache
+variables-secrets.json
