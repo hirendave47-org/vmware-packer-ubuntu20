@@ -251,7 +251,7 @@ source "vsphere-iso" "linux-ubuntu-server" {
   }
   //iso_url = var.iso_url
   iso_paths = ["[${ var.vcenter_datastore }] /${ var.iso_path }"]
-  iso_checksum = "${var.iso_checksum_type}:${var.iso_checksum}"
+  #iso_checksum = "${var.iso_checksum_type}:${var.iso_checksum}"
   http_directory = var.http_directory
   boot_order = "disk,cdrom"
   boot_wait = var.vm_boot_wait

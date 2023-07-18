@@ -14,9 +14,9 @@ vcenter_server                  = "10.99.22.110"
 vcenter_datacenter              = "DEMUDCCMP001"
 #vcenter_host                    = ""
 vcenter_cluster                 = "DEMUCLUCMP001"
-vcenter_datastore               = "vsanDatastore"
+vcenter_datastore               = "datastore1 (2)"
 vcenter_network                 = "Kubernetes"
 vcenter_folder                  = "Templates"
 
 # ISO Objects
-iso_path                        = "[datastore1 (2)] /ISO/ubuntu-20.04.4-live-server-amd64.iso"
+iso_path                        = "ISO/ubuntu-20.04.4-live-server-amd64.iso"
