@@ -139,7 +139,7 @@ variable "vm_version" {
 variable "vm_firmware" {
   type    = string
   description = "The virtual machine firmware. (e.g. 'bios' or 'efi')"
-  default = ""
+  default = "efi"
 }
 
 variable "vm_cdrom_type" {
