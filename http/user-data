@@ -40,7 +40,7 @@ autoinstall:
           gateway4: 10.10.40.1
           nameservers:
             addresses: [192.168.239.24, 192.168.239.36]
-          search: [atosurnstack.lab]
+            search: [atosurnstack.lab]
   identity:
     hostname: ubuntu
     username: ubuntu
