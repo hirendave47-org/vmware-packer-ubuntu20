@@ -10,18 +10,7 @@ autoinstall:
   keyboard:
     layout: en
     variant: us
-  packages:
-    [
-      open-vm-tools,
-      openssh-server,
-      ntp,
-      curl,
-      vim,
-      zip,
-      unzip,
-      ca-certificates,
-      cloud-init,
-    ]
+  packages: [open-vm-tools, openssh-server]
   network:
     network:
       version: 2
