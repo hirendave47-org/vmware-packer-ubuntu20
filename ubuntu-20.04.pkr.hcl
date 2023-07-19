@@ -278,6 +278,7 @@ source "vsphere-iso" "linux-ubuntu-server" {
   "gateway=10.10.40.1 ",
   "nameserver=192.168.239.24 ",
   "hostname=ubuntu ",
+  " -R",
   "boot<enter>"
 ]
   ip_wait_timeout = "20m"
