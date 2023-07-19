@@ -276,7 +276,7 @@ source "vsphere-iso" "linux-ubuntu-server" {
   "ip=10.10.40.3 ",
   "netmask=255.255.255.0 ",
   "gateway=10.10.40.1 ",
-  "dns=192.168.239.24 ",
+  "nameserver=192.168.239.24 ",
   "hostname=ubuntu ",
   "boot<enter>"
 ]

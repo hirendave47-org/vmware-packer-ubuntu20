@@ -42,7 +42,7 @@ autoinstall:
             addresses: [192.168.239.24, 192.168.239.36]
           search: [atosurnstack.lab]
   identity:
-    hostname: ubuntu-server
+    hostname: ubuntu
     username: ubuntu
     password: "$6$rounds=4096$.YzF1Xwm$tnGwS1hHBLRMIMV8yBF4jj3mnomooXgAVoPeCNslFykgfVsyxzcRYYSGtIrfg7XVR.fdOiqNnMj.H8Y6H50NA0"
   ssh:
