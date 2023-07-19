@@ -267,7 +267,20 @@ source "vsphere-iso" "linux-ubuntu-server" {
   #   "autoinstall ",
   #   "boot<enter>"
   # ]
-  boot_command = [
+#   boot_command = [
+#   "<esc><esc><esc>",
+#   "<enter><wait>",
+#   "/casper/vmlinuz ",
+#   "initrd=/casper/initrd ",
+#   "autoinstall ",
+#   "ip=10.10.40.3 ",
+#   "netmask=255.255.255.0 ",
+#   "gateway=10.10.40.1 ",
+#   "nameserver=192.168.239.24 ",
+#   "hostname=ubuntu ",
+#   "boot<enter>"
+# ]
+boot_command = [
   "<esc><esc><esc>",
   "<enter><wait>",
   "/casper/vmlinuz ",
@@ -278,7 +291,8 @@ source "vsphere-iso" "linux-ubuntu-server" {
   "gateway=10.10.40.1 ",
   "nameserver=192.168.239.24 ",
   "hostname=ubuntu ",
-  " -R",
+  " -R -r -J",
+  " -input-charset utf-8",
   "boot<enter>"
 ]
   ip_wait_timeout = "20m"
