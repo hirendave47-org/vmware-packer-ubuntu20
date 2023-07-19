@@ -4,6 +4,8 @@ autoinstall:
   early-commands:
     # workaround to stop ssh for packer as it thinks it timed out
     - sudo systemctl stop ssh
+    - sudo echo 'Acquire::http::Proxy "http://192.168.239.27:3128";' > /etc/apt/apt.conf
+    - sudo apt-get update
   locale: en_US
   keyboard:
     layout: en
@@ -18,8 +20,6 @@ autoinstall:
       zip,
       unzip,
       ca-certificates,
-      python3-pip,
-      jq,
       cloud-init,
     ]
   network:
